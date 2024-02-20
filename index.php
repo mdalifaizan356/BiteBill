@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css?v=<?php echo time(); ?>" />
+    <title>Home</title>
+</head>
+<body>
+<!--Header start-->
+    <header class="header">
+        <h3>BiteBill</h3>
+        <button><a href="RoomMate/RM_Login.php">Login</a></button>
+    </header>
+<!--Header End-->
+
+<!-- Start Table -->
+    <main>
+    <div class="table-Container">
+        <table>
+            <caption>All Data</caption>
+            <tr>
+              <th>Date</th>
+              <th>Buyer</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Faizan</td>
+              <td>Potato</td>
+              <td>Faizan</td>
+              <td>Potato</td>
+              <td>Varify</td>
+            </tr>
+            <td>Faizan</td>
+            <td>Potato</td>
+            <td>Faizan</td>
+            <td>Potato</td>
+            <td>Varify</td>
+          </tr>
+          <td>Faizan</td>
+          <td>Potato</td>
+          <td>Faizan</td>
+          <td>Potato</td>
+          <td>Varify</td>
+        </tr>
+        <td>Faizan</td>
+        <td>Potato</td>
+        <td>Faizan</td>
+        <td>Potato</td>
+        <td>Varify</td>
+      </tr>
+      <td>Faizan</td>
+      <td>Potato</td>
+      <td>Faizan</td>
+      <td>Potato</td>
+      <td>Varify</td>
+    </tr>
+    <td>Faizan</td>
+    <td>Potato</td>
+    <td>Faizan</td>
+    <td>Potato</td>
+    <td>Varify</td>
+  </tr>
+  <td>Faizan</td>
+  <td>Potato</td>
+  <td>Faizan</td>
+  <td>Potato</td>
+  <td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Faizan</td>
+<td>Potato</td>
+<td>Varify</td>
+</tr>
+</table>
+</div>
+</main>
+<!-- End Table -->
+</body>
+</html>
