@@ -4,8 +4,9 @@ if(isset($_REQUEST["addproduct"])){
     $Pro_Name=$_REQUEST["ProductName"];
     $Pro_Price=$_REQUEST["Price"];
     $Pro_Description=$_REQUEST["Description"];
+    $Date=Date("Y/m/d");
 
-    $insertdetails="insert into expenses(Date,Buyer, Product, Price, Description, status) values(NOW(),'".$_SESSION["Name"]."','".$Pro_Name."', '".$Pro_Price."', '".$Pro_Description."',1)";
+    $insertdetails="insert into expenses(Date,Buyer, Product, Price, Description, status) values('".$Date."','".$_SESSION["Name"]."','".$Pro_Name."', '".$Pro_Price."', '".$Pro_Description."',1)";
     $run=mysqli_query($con,$insertdetails);
     if($run){
       echo "<script>window.location.href='RM_AddExpense.php?Expense add is successfully';</script>";

@@ -1,3 +1,6 @@
+<?php
+include("connection.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,181 +29,21 @@
               <th>Price</th>
               <th>Status</th>
             </tr>
+            <?php
+                $fetchRMData="select * from expenses";	
+			          $tbl=mysqli_query($con,$fetchRMData);
+                while($row=mysqli_fetch_array($tbl)){
+            ?>
             <tr>
-              <td>Faizan</td>
-              <td>Potato</td>
-              <td>Faizan</td>
-              <td>Potato</td>
-              <td>Varify</td>
+              <td><?php echo $row["Date"];?></td>
+              <td><?php echo $row["Buyer"];?></td>
+              <td><?php echo $row["Product"];?></td>
+              <td><?php echo $row["Price"];?></td>
+              <td><?php echo $row["status"];?></td>
             </tr>
-            <td>Faizan</td>
-            <td>Potato</td>
-            <td>Faizan</td>
-            <td>Potato</td>
-            <td>Varify</td>
-          </tr>
-          <td>Faizan</td>
-          <td>Potato</td>
-          <td>Faizan</td>
-          <td>Potato</td>
-          <td>Varify</td>
-        </tr>
-        <td>Faizan</td>
-        <td>Potato</td>
-        <td>Faizan</td>
-        <td>Potato</td>
-        <td>Varify</td>
-      </tr>
-      <td>Faizan</td>
-      <td>Potato</td>
-      <td>Faizan</td>
-      <td>Potato</td>
-      <td>Varify</td>
-    </tr>
-    <td>Faizan</td>
-    <td>Potato</td>
-    <td>Faizan</td>
-    <td>Potato</td>
-    <td>Varify</td>
-  </tr>
-  <td>Faizan</td>
-  <td>Potato</td>
-  <td>Faizan</td>
-  <td>Potato</td>
-  <td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Faizan</td>
-<td>Potato</td>
-<td>Varify</td>
-</tr>
+            <?php
+                }
+            ?>
 </table>
 </div>
 </main>

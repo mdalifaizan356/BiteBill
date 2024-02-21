@@ -1,6 +1,5 @@
 <?php
 include("../connection.php");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +105,7 @@ include("../connection.php");
                     <th>Status</th>
                     <th>Accept</th>
                     <th>Reject</th>
-                </tr>
+                </tr>   
                 <?php
                 $fetchRMData="select * from rm_details where status=0";	
 			    $tbl=mysqli_query($con,$fetchRMData);
