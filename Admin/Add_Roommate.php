@@ -1,5 +1,24 @@
 <?php
 include("../connection.php");
+if(isset($_REQUEST["deletereq"]))
+	{
+		$sql="DELETE FROM rm_details WHERE id=".$_REQUEST["deletereq"];
+		mysqli_query($con,$sql);
+	}
+if(isset($_REQUEST["acceptid"]))
+	{
+		if($_REQUEST["status"]==0)
+		{
+	$sql="Update rm_details set status=1 WHERE id=".$_REQUEST["acceptid"];
+		mysqli_query($con,$sql);
+		
+		}
+		if($_REQUEST["status"]==1)
+		{
+	$sql="Update rm_details set Status=0 WHERE id=".$_REQUEST["acceptid"];
+		mysqli_query($con,$sql);
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -114,9 +133,9 @@ include("../connection.php");
                 <tr>
                     <td><?php echo $row["Name"];?></td>
                     <td><?php echo $row["Email"];?></td>
-                    <td><?php echo $row["status"];?></td>
-                    <td><button>Accept</button></td>
-                    <td><button>Reject</button></td>
+                    <td><?php if($row["status"]==1) echo "Enable"; else echo "Disable"; ?></td>
+                    <td><a href="Add_Roommate.php?acceptid=<?php echo $row["id"];?>&status=<?php echo $row["status"];?>">Accept Request</a></td>
+                    <td><a href="Add_Roommate.php?deletereq=<?php echo $row["id"];?>">Delete</a></td>
                 </tr>
                 <?php
                 }

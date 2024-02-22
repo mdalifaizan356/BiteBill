@@ -5,7 +5,7 @@
         header("LOCATION:RM_Login.php");
         die();
     }
-    $buyername=$_SESSION["Name"];
+    $sum=0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,9 +56,10 @@
               <th>Status</th>
             </tr>
             <?php
-                $fetchRMData="select * from expenses where Buyer='".$_SESSION["Name"]."'";	
+                $fetchRMData="select * from expenses where Buyer_Id='".$_SESSION["LoginId"]."'";	
 			          $tbl=mysqli_query($con,$fetchRMData);
-                while($row=mysqli_fetch_array($tbl)){
+                   while($row=mysqli_fetch_array($tbl)){
+                    $sum += $row['Price'];
             ?>
             <tr>
               <td><?php echo $row["Date"];?></td>
@@ -72,5 +73,10 @@
             ?>
 </table>
 </div>
+<div>
+    <h1>Your total expense <?php echo $sum;?></h1>
+</div>
 </body>
 </html>
+
+

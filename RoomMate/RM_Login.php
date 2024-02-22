@@ -12,7 +12,7 @@ session_start();
 		include("../connection.php");
 		if(isset($_POST["Login"]))
 		{
-			$sql="select * from rm_details where Email='".$_POST["RM_Email"]."' and Password='".$_POST["RM_Password"]."'";	
+			$sql="select * from rm_details where Email='".$_POST["RM_Email"]."' and Password='".$_POST["RM_Password"]."' and Status=1";	
 			$tbl=mysqli_query($con,$sql);
 			if($row=mysqli_fetch_array($tbl))
 			{	
@@ -22,7 +22,7 @@ session_start();
 			}
 			else
 			{
-				echo "Invalid";
+				echo "Sorry";
 			}
 		}
 ?>
