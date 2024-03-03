@@ -39,6 +39,8 @@
                         <dd><a href="RM_AllExpenses.php">All Expenses</a></dd>
                         <dd><a href="RM_AddExpense.php">Add New Expense</a></dd>
                         <dd><a href="RM_EditExpense.php">Edit Expense</a></dd>
+                        <dt>Manage Site</dt>
+                        <dd><a href="Admin_Updateindex.php">Update Expenses Table</a></dd>
                    </dl>
                 </div>
             </div>

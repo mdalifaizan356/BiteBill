@@ -30,7 +30,7 @@ include("connection.php");
               <th>Status</th>
             </tr>
             <?php
-                $fetchRMData="select * from expenses";	
+                $fetchRMData="select * from final_expenses";	
 			          $tbl=mysqli_query($con,$fetchRMData);
                 while($row=mysqli_fetch_array($tbl)){
             ?>

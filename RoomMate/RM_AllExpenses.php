@@ -56,7 +56,7 @@
               <th>Status</th>
             </tr>
             <?php
-                $fetchRMData="select * from expenses where Buyer_Id='".$_SESSION["LoginId"]."'";	
+                $fetchRMData="select * from expenses_desc where Buyer_Id='".$_SESSION["LoginId"]."'";	
 			          $tbl=mysqli_query($con,$fetchRMData);
                    while($row=mysqli_fetch_array($tbl)){
                     $sum += $row['Price'];
@@ -64,9 +64,9 @@
             <tr>
               <td><?php echo $row["Date"];?></td>
               <td><?php echo $row["Buyer"];?></td>
-              <td><?php echo $row["Product"];?></td>
+              <td><?php echo $row["Product_name"];?></td>
               <td><?php echo $row["Price"];?></td>
-              <td><?php echo $row["status"];?></td>
+              <td><?php echo $row["Status"];?></td>
             </tr>
             <?php
                 }
