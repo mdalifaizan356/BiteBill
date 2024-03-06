@@ -1,6 +1,21 @@
 <?php
 include("../connection.php");
+$totalapprovel=0;
+$fetchRMData="SELECT id, status, COUNT(*) AS frequency FROM rm_details GROUP BY status";	
+			          $tbl=mysqli_query($con,$fetchRMData);
+                      while($row=mysqli_fetch_array($tbl)){
+                        $totaluser=$row["frequency"];
+                      }
 
+$fetchRMData="SELECT Expense_id,Approval_status, COUNT(*) AS frequency FROM expenses_approvals GROUP BY Expense_id";	
+			          $tbl=mysqli_query($con,$fetchRMData);
+                      while($row=mysqli_fetch_array($tbl)){
+                        echo $row["Expense_id"];
+                        echo $row["frequency"];
+                        $totalapprovel=$row["frequency"]+$totalapprovel;
+                      }       
+                      echo $totalapprovel;
+                      echo $totaluser;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,23 +61,6 @@ include("../connection.php");
     </header>
     <div class="Container">
         <div class="Requestbox">
-        <?php
-                $fetchRMData="SELECT Expense_id, Name_Approved_by,Approval_status, COUNT(*) AS frequency FROM expenses_approvals GROUP BY Expense_id, Name_Approved_by ,Approval_status";	
-			          $tbl=mysqli_query($con,$fetchRMData);
-                      while($row=mysqli_fetch_array($tbl)){
-                        // echo $row["Approval_id"];
-                        // echo $row["Buyer_Id"];
-                        // echo $row["Buyer_name"];
-                        echo $row["Expense_id"];
-                        // echo $row["Product"];
-                        // echo $row["Price"];
-                        // echo $row["Id_Approved_by"];
-                        // echo $row["Name_Approved_by"];
-                        echo $row["Approval_status"];
-                        echo $row["frequency"];
-                        echo $row["Name_Approved_by"];
-                   }
-            ?>
             <form method="post">
                 <p>Add Expenses After Approved by All</p>
             </form>
