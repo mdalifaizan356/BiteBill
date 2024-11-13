@@ -1,0 +1,49 @@
+BiteBill :
+
+
+BiteBill Technology Stack:
+
+    Frontend:
+        React.js: Interactive UI banane ke liye.
+        Tailwind CSS ya Bootstrap: Styling aur responsive design ke liye.
+
+    Backend:
+        Node.js with Express.js: Server-side logic ke liye.
+        Authentication ke liye JWT (JSON Web Tokens) ya Passport.js use kar sakte hain.
+        Database:
+
+    Database
+        MongoDB: NoSQL database jisme aap dynamic data easily store kar sakte hain. Yeh aapko flexibility dega aur JSON-like documents ko handle karna asaan hoga.
+        Real-Time Updates:
+
+    Socket.io: Real-time updates ke liye agar aapko instant changes dikhane hain jab ek user koi purchase record kare.
+
+Deployment:
+Vercel ya Netlify frontend ke liye aur Render ya Heroku backend ke liye.
+MongoDB Atlas: Cloud mein database host karne ke liye.
+
+Features ka Breakdown:
+    Home Page:
+        Header: Logo, SignUp/SignIn Button, SearchBar
+        Content
+        Footer: Important Links
+
+    SignUp:
+        Get Data: UserName, Phone Number, Email, Password
+
+    SignIn:
+        Get Data: Username, Password
+
+    Super Admin Dashboard:
+        Side-Menu: Manage Profile
+                        Manage Room
+                        Manage Roommates
+                        Logout
+
+    Roommate Dashboard:
+        Side-Menu:Manage Profile
+                        Manage expenditure
+                        Manage Income
+                        Logout
+
+
