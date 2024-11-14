@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"fredoka one", cursive ;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+.center{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    /* background-color: #000; */
+    /* border-right: 0.3rem solid red;
+    border-radius: 50%;
+    animation: rot 2s linear infinite; */
+}
+.rot{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    /* background-color: #000; */
+    border-right: 0.3rem solid red;
+    border-radius: 50%;
+    animation: rot 1s linear infinite;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+h1{
+    color:black;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
