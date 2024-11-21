@@ -1,20 +1,28 @@
 // import {Route, Routes } from 'react-router-dom';
 import './App.css'
-import {Routes, Route} from "react-router-dom";
-import UserDashboard from './Pages/UserDashboard/UserDashboard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import About from './Pages/AboutUs/About';
+import Contact from './Pages/ContactUs/Contact';
+import SignUp from './Pages/SignUp/SignUp';
+import SignIn from './Pages/SignIn/SignIn';
 import PNF from './Pages/PNF/PNF';
-import Layout from './Components/Layout/Layout/Layout';
-import Banner from './Components/Banner/Banner';
+
 
 function App() {
   
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Banner/>} />
-      <Route path='/UserDashboard' element={<UserDashboard/>} />
-      <Route path='*' element={<PNF />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Aboutus' element={<About/>} />
+        <Route path='/Contactus' element={<Contact/>} />
+        <Route path='/SignUp' element={<SignUp/>} />
+        <Route path='/SignIn' element={<SignIn/>} />
+        <Route path='*' element={<PNF/>} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
