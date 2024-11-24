@@ -2,6 +2,7 @@ const e = require("express");
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const bodyParserMiddleware = require("./Middlewares/bodyParser")
 
 // Access Express in a variable
 const app = express();
@@ -9,9 +10,12 @@ const app = express();
 // Define port
 const port = process.env.PORT||3000;
 
-// Default middleware
-app.use(express.json())
-app.use(express.urlencoded({extended:true}));
+// Apply middleware globally
+// app.use(bodyParserMiddleware);
+bodyParserMiddleware(app);
+
+const userRouter = require('./Routes/userRoute');
+app.use('/newuser', userRouter);
 
 // Define Mongo URL and Connect MongoDB
 const mongo_url=process.env.MONGO_URL;
